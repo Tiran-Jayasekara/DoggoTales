@@ -1,6 +1,8 @@
+# Next JS + Tailwind CSS + antd Design
+
 https://github.com/Tiran-Jayasekara/DoggoTales/assets/70306643/bd234ed1-905f-47f5-bf5a-f00e890d5917
 
-Still Developing
+# Still Developing
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
