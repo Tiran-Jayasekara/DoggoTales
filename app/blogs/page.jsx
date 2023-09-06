@@ -59,7 +59,7 @@ const Blogs = () => {
           </Col>
         </Row>
 
-        <Col className=""></Col>
+      
 
         <Row className="flex justify-end mt-0 lg:mr-40 mr-10">
           <Col xs={{ span: 20 }} sm={{ span: 8 }} lg={{ span: 5 }} className="">

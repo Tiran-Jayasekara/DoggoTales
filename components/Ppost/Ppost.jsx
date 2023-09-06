@@ -62,19 +62,21 @@ const Ppost = () => {
         ))}
       </Row>
       <Row>
-              <Col
-                xs={{ span: 24 }}
-                sm={{ span: 24 }}
-                lg={{ span: 24 }}
-                className="flex justify-center mt-20 md:mt-40 lg:mt-20"
-              >
-                <Link href="/blogs">
-                  <div className="bg-gradient-to-r from-[#c07c45] to-[#e4b598] rounded-2xl hover:from-[#e4b598] hover:to-[#c07c45] transform hover:scale-105 h-auto w-60 mt-10 md:mt-0">
-                    <h5 className="text-black font-poppins text-center md:text-xl text-1xl font-semibold tracking-wide p-2">See More Posts</h5>
-                  </div>
-                </Link>
-              </Col>
-            </Row>
+        <Col
+          xs={{ span: 24 }}
+          sm={{ span: 24 }}
+          lg={{ span: 24 }}
+          className="flex justify-center mt-20 md:mt-40 lg:mt-20"
+        >
+          <Link href="/blogs">
+            <div className="bg-gradient-to-r from-[#c07c45] to-[#e4b598] rounded-2xl hover:from-[#e4b598] hover:to-[#c07c45] transform hover:scale-105 h-auto w-60 mt-10 md:mt-0">
+              <h5 className="text-black font-poppins text-center md:text-xl text-1xl font-semibold tracking-wide p-2">
+                See More Posts
+              </h5>
+            </div>
+          </Link>
+        </Col>
+      </Row>
     </>
   );
 };

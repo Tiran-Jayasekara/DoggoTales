@@ -3,6 +3,7 @@ import { Col, Row } from "antd";
 function Visit() {
   return (
     <>
+    
       <Row className="pb-10 mt-20 bg-slate-100 md:pt-20 lg:pt-0">
         <Col
           xs={{ span: 24 }}
