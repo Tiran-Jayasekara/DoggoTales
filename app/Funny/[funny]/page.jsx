@@ -190,7 +190,7 @@ const page = ({ params }) => {
                     <h6 className="font-Poppins text-start text-3xl font-medium text-black mt-10 mb-4">
                       {content.header}
                     </h6>
-                    <p className="text-xl justify-center">{content.description}</p>
+                    <p className="text-4xl justify-center ">{content.description}</p>
 
                   </li>
                 ))}

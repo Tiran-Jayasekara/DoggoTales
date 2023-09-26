@@ -3,7 +3,7 @@ export default [
     blogId: 1,
     image: "/assets/images/Rot/rot.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Are Rough Collies Not Popular: Interesting Facts Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -47,7 +47,7 @@ export default [
     blogId: 2,
     image: "/assets/images/Rot/fluffy.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Does My French Bulldog Have a Long Snout: Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -93,7 +93,7 @@ export default [
     blogId: 3,
     image: "/assets/images/Rot/huskey.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Rhodesian Ridgeback vs Black Mouth Cur Comparison: Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -137,7 +137,7 @@ export default [
     blogId: 4,
     image: "/assets/images/Rot/labo.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Are My French Bulldogs Balls Red and Swollen: Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -181,7 +181,7 @@ export default [
     blogId: 5,
     image: "/assets/images/Rot/ret.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Do Bulldogs Like to Skateboard: Train in 10 Easy Steps",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -225,7 +225,7 @@ export default [
     blogId: 6,
     image: "/assets/images/Rot/rot.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Do Dogs Think Humans Are Cute: Sounds Weird? Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -269,7 +269,7 @@ export default [
     blogId: 7,
     image: "/assets/images/Rot/sherped.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "How Much Do English Bulldogs Actually Shed: 10 Ways to Stop",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -313,7 +313,7 @@ export default [
     blogId: 8,
     image: "/assets/images/Rot/huskey.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "What Are Toadline Bulldogs and How to Care: Guide with Cost",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -357,7 +357,7 @@ export default [
     blogId: 9,
     image: "/assets/images/Rot/labo.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "What Is English Bulldog Cherry Eye: Causes with Treatments",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -401,7 +401,7 @@ export default [
     blogId: 10,
     image: "/assets/images/Rot/ret.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Is My French Bulldog Doesn’t Chew His Food: Guide to Do",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -445,7 +445,7 @@ export default [
     blogId: 11,
     image: "/assets/images/Rot/rot.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Do All Lilac English Bulldogs Have Blue Eyes: Guide to Know",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",
@@ -489,7 +489,7 @@ export default [
     blogId: 12,
     image: "/assets/images/Rot/sherped.jpg",
     heading:
-      "Let's investigate dog breed from Play full pug to active retrivers.",
+      "Why Does My English Bulldog Hump Me: 5 Reasons Guide",
     table_of_contents: [
       {
         header: "Optimal Physical Performance",

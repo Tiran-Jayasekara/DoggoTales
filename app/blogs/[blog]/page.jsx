@@ -57,7 +57,7 @@ const page = ({ params }) => {
 
           <Col xs={{ span: 0 }} lg={{ span: 1 }}></Col>
           <Col className="mx-auto mt-0" xs={{ span: 20 }} lg={{ span: 12 }}>
-            <h1 className="mx-auto mt-0 text-4xl text-amber-700 mb-4">
+            <h1 className="mx-auto font-sans mt-0 text-4xl text-amber-700 mb-4">
               {selectedBlog.heading}
             </h1>
             <img
@@ -67,23 +67,27 @@ const page = ({ params }) => {
             />
 
             <div className="mt-10 bg-faf9f9 p-10 rounded-lg shadow-md mb-10 shadow-top">
-              <h3 className="text-1.5rem mb-10 font-Poppins text-2xl">
+              <h3 className="text-1.5rem mb-10 font-sans text-2xl">
                 Table of Contents
               </h3>
               <ul className="list-none p-0">
                 {selectedBlog.table_of_contents.map((content, index) => (
                   <li key={index}>
                     <a
-                      className="no-underline text-black transition duration-300 hover:text-c07c45 font-Poppins text-xl"
+                      className="no-underline leading-8 text-black transition duration-300 hover:text-c07c45 font-sans text-xl"
                       href={`#${content.header_id}`}
                       onClick={(e) => {
                         e.preventDefault();
                         scrollToSection(content.header_id);
                       }}
                     >
-                      <h1>
-                        {index + 1}. {content.header}
-                      </h1>
+                      {content.header_id ? (
+                        <h1>
+                          {content.header_id}. {content.header}
+                        </h1>
+                      ) : (
+                        <></>
+                      )}
                     </a>
                   </li>
                 ))}
@@ -95,7 +99,7 @@ const page = ({ params }) => {
 
           <Col className="hidden lg:block" xs={{ span: 20 }} lg={{ span: 6 }}>
             <div className="">
-              <h1 className="text-4xl text-center font-Poppins mb-5">
+              <h1 className="text-4xl text-center font-sans mb-5">
                 Who Am I ?
               </h1>
               <img
@@ -104,7 +108,7 @@ const page = ({ params }) => {
                 alt=""
               />
             </div>
-            <p className="text-center text-16 font-Poppins leading-1.4 mb-5">
+            <p className="text-center font-sans text-xl leading-6 mb-5  text-gray-600">
               My name is Tiran Jayasekara! a Developper, blogger, veterinarian
               and above all, animal lover. Not to be proud, but I kind of know
               how to take everything along. I am kind of a person whom you call
@@ -119,7 +123,7 @@ const page = ({ params }) => {
             <h2 className="text-2xl">Latest</h2>
             <hr />
 
-            {randomArticles.map((article, index) => (
+            {/* {randomArticles.map((article, index) => (
               <Row key={index}>
                 <Col className="mt-6" xs={{ span: 20 }} lg={{ span: 8 }}>
                   <img
@@ -130,14 +134,14 @@ const page = ({ params }) => {
                 </Col>
 
                 <Col className="mt-0" xs={{ span: 20 }} lg={{ span: 16 }}>
-                  <h5 className="ml-8 text-md  text-amber-700 mt-10 font-Poppins">
+                  <h5 className="ml-8 text-base  text-amber-700 mt-6 font-sans">
                     <Link href={`/breedpost${article.blogId}`}>
                       {article.heading}
                     </Link>
                   </h5>
                 </Col>
               </Row>
-            ))}
+            ))} */}
           </Col>
           <Col xs={{ span: 0 }} lg={{ span: 2 }}></Col>
         </Row>
@@ -146,19 +150,103 @@ const page = ({ params }) => {
           <Col
             className="mx-auto mt-0 mb-20"
             xs={{ span: 20 }}
-            lg={{ span: 20 }}
+            lg={{ span: 12 }}
           >
+            <h4 className="font-sans leading-10 text-xl mt-20 text-gray-600 text-justify">
+              {selectedBlog.subHeading}
+            </h4>
             <div id="optimal-physical-performance">
               {/* Remove the <p> tag and render the <ul> directly */}
               <ul>
                 {selectedBlog.table_of_contents.map((content, index) => (
                   <li key={index} id={content.header_id}>
-                    <h6 className="font-Poppins text-start text-3xl font-medium text-black mt-10 mb-4">
+                    <h6 className="font-sans text-start text-3xl font-medium  text-gray-800 mt-10 mb-4">
+                      {content.header_id}
+                      {content.header_id ? (<>{" . "}</> ):( <></>)}
+
                       {content.header}
                     </h6>
-                    <p className="text-xl text-justify">
+                    <p className="font-sans leading-10 text-xl  text-gray-600 text-justify">
                       {content.description}
                     </p>
+
+                    {content.image ? (
+                      <img
+                        className="mx-auto justify-center max-w-full my-10"
+                        src={content.image}
+                        alt=""
+                      />
+                    ) : (
+                      <></>
+                    )}
+
+                    <br></br>
+
+                    {content.ulArray ? (
+                      <div>
+                        {content.ulArray.map((content1, index) => (
+                          <div>
+                            {content1.ulheader ? (
+                              <>
+                                <br></br>
+                                <p className="font-sans leading-10 text-xl  text-gray-600 text-justify">
+                                  <strong>{content1.ulheader}</strong>
+                                </p>
+                              </>
+                            ) : (
+                              <></>
+                            )}
+                            {content1.ulheaderDescription ? (
+                              <>
+                                <br></br>
+                                <p className="font-sans leading-10 text-xl  text-gray-600 text-justify">
+                                  {content1.ulheaderDescription}
+                                  <br></br>
+                                </p>
+                                <br></br>
+                              </>
+                            ) : (
+                              <></>
+                            )}
+                            {content1.ul.map((content2, index) => (
+                              <ul>
+                                <li>
+                                  {content2.ul ? (
+                                    <>
+                                      <p
+                                        className="font-sans leading-20 text-xl mt-10 mb-0 text-gray-600 text-justify"
+                                        key={index}
+                                      >
+                                        <b>{content2.ul}</b>
+                                      </p>
+                                      <p className="font-sans leading-10 text-xl mt-0  text-gray-600 text-justify">
+                                        {content2.uldescription}
+                                      </p>
+                                    </>
+                                  ) : (
+                                    <p className="font-sans leading-10 text-xl mt-0  text-gray-600 text-justify">
+                                      {content2.uldescription}
+                                    </p>
+                                  )}
+                                </li>
+                              </ul>
+                            ))}
+
+                            <br></br>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <></>
+                    )}
+
+                    {content.ulFooter ? (
+                      <p className="font-sans leading-10 text-xl  text-gray-600 text-justify">
+                        {content.ulFooter}
+                      </p>
+                    ) : (
+                      <></>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -191,7 +279,7 @@ const page = ({ params }) => {
             Next
           </Link>
         </div>
-        <Footer/>
+        <Footer />
       </>
     </div>
   );

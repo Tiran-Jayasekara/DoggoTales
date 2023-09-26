@@ -5,7 +5,7 @@ import Visit from "@components/Visit/visit";
 const Home = () => {
   return (
     <>
-      <section className="w-full flex items-center justify-center flex-col mt-60 lg:mt-40 lg:mb-0 mb-10">
+      <section className=" flex items-center justify-center flex-col mt-60 lg:mt-40 lg:mb-0 mb-10">
         <h1 className="head_text text-center">
           Doggo Tales
           <br />

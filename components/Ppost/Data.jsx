@@ -2,34 +2,34 @@ export default [
     {
       image: "/assets/images/Rot/sherped.jpg",
       heading:
-        "Let's investigate dog breed from Play full pug to active retrivers.",
+        "Why Are Dogs Called ‘Man’s Best Friend’? | 10 Reasons Guide",
       link: "/breedpost1",
     },
     {
       image: "/assets/images/Rot/fluffy.jpg",
-      heading: "Do you need advice on welcome in a new puppy into your house?",
+      heading: "How Long Can You Leave Dry Dog Food Out in My Pet’s Dish?",
       link: "/breedpost1",
     },
     {
       image: "/assets/images/Rot/huskey.jpg",
-      heading: "Do you know about dog intertain statement experience?",
+      heading: "Do Dogs Heal Faster Than Humans: Myths and Facts Guide",
       description: "BY JEANINE TRACEE SEPTEMBER 25, 2022",
       link: "/breedpost1",
     },
     {
       image: "/assets/images/Rot/labo.jpg",
-      heading: "Do you know dogs Can Heal our mind and reduce stress?",
+      heading: "What Does It Mean When Your Dog’s Balls Turn Black: Guide",
       link: "/breedpost1",
     },
     {
       image: "/assets/images/Rot/ret.jpg",
       heading:
-        "Why dogs how and back do you need to know cases and interpretation?",
+        "How Do I Care of Belgian Malinois Mixed with Pitbull: Guide",
       link: "/breedpost1",
     },
     {
       image: "/assets/images/Rot/rot.jpg",
-      heading: "dog fashion need to know",
+      heading: "Why Are Rough Collies Not Popular: Interesting Facts Guide",
 
       link: "/breedpost1",
     },
